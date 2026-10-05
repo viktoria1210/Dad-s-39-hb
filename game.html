@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Mode · 39</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        39<span>.</span>
+    </a>
+
+    <nav class="nav">
+        <a href="dossier.html">Досьє</a>
+        <a href="archive.html">Спогади</a>
+        <a href="game.html">Гра</a>
+        <a href="letter.html">Лист</a>
+    </nav>
+
+    <button class="menu-btn" aria-label="Меню">
+        ☰
+    </button>
+
+</header>
+
+
+<main>
+
+    <section class="page-heading reveal">
+
+        <p class="eyebrow">
+            FILE 03 · TEST MODE
+        </p>
+
+        <h1>
+            Наскільки<br>
+            <em>Ви нас знаєте?</em>
+        </h1>
+
+        <p>
+            Невеликий тест. Без підглядання.
+        </p>
+
+    </section>
+
+
+    <section class="quiz section">
+
+
+        <div class="quiz-progress">
+
+            <span id="questionNumber">
+                01
+            </span>
+
+            <div class="progress-bar">
+                <span id="progress"></span>
+            </div>
+
+            <span>05</span>
+
+        </div>
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question active" data-answer="1">
+
+            <p class="question-label">
+                QUESTION 01
+            </p>
+
+            <h2>
+                Що для Вас<br>
+                найважливіше?
+            </h2>
+
+            <div class="answers">
+
+                <button data-choice="0">
+                    Гроші
+                </button>
+
+                <button data-choice="1">
+                    Сім'я
+                </button>
+
+                <button data-choice="2">
+                    Відпочинок
+                </button>
+
+                <button data-choice="3">
+                    Успіх
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question" data-answer="2">
+
+            <p class="question-label">
+                QUESTION 02
+            </p>
+
+            <h2>
+                Який режим<br>
+                Вам ближчий?
+            </h2>
+
+            <div class="answers">
+
+                <button data-choice="0">
+                    Рано вставати
+                </button>
+
+                <button data-choice="1">
+                    Спати до обіду
+                </button>
+
+                <button data-choice="2">
+                    Прокинутися і одразу щось робити
+                </button>
+
+                <button data-choice="3">
+                    Як вийде
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question" data-answer="0">
+
+            <p class="question-label">
+                QUESTION 03
+            </p>
+
+            <h2>
+                Що швидше за все<br>
+                приверне Вашу увагу?
+            </h2>
+
+            <div class="answers">
+
+                <button data-choice="0">
+                    Щось цікаве
+                </button>
+
+                <button data-choice="1">
+                    Гучна музика
+                </button>
+
+                <button data-choice="2">
+                    Новий серіал
+                </button>
+
+                <button data-choice="3">
+                    Реклама
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question" data-answer="3">
+
+            <p class="question-label">
+                QUESTION 04
+            </p>
+
+            <h2>
+                Хто має останнє<br>
+                слово в сім'ї?
+            </h2>
+
+            <div class="answers">
+
+                <button data-choice="0">
+                    Тато
+                </button>
+
+                <button data-choice="1">
+                    Мама
+                </button>
+
+                <button data-choice="2">
+                    Дитина
+                </button>
+
+                <button data-choice="3">
+                    Залежить від ситуації
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question" data-answer="1">
+
+            <p class="question-label">
+                QUESTION 05
+            </p>
+
+            <h2>
+                Скільки Вам<br>
+                виповнилося?
+            </h2>
+
+            <div class="answers">
+
+                <button data-choice="0">
+                    38
+                </button>
+
+                <button data-choice="1">
+                    39
+                </button>
+
+                <button data-choice="2">
+                    40
+                </button>
+
+                <button data-choice="3">
+                    29
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div class="quiz-result" id="quizResult">
+
+            <p class="eyebrow">
+                TEST COMPLETE
+            </p>
+
+            <h2>
+                Результат:<br>
+                <span id="score">0</span>/5
+            </h2>
+
+            <p id="resultText"></p>
+
+            <a href="letter.html" class="main-btn">
+                Наступний рівень
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>TEST MODE · COMPLETE</p>
+    <p>39</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
